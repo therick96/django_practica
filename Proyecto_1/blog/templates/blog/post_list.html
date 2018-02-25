@@ -8,14 +8,20 @@
                 <div class="uk-card uk-card-default uk-card-hover uk-margin-bottom">
                     <div class="uk.uk-card-header" align="center">
                         <h2 class="uk-card-title uk-margin-remove-bottom" align="center">
-                            {{post.title}}
+                            <a href="{% url 'post_detail' pk=post.pk %}">
+                                {{post.title}}
+                            </a>
                         </h2>
                         <p class="uk-text-meta uk-margin-remove-top">{{post.author}}</p>
                     </div>
                     <div class="uk-card-body">
                         
                     </div>
-                    <div class="uk-card-footer">{{post.create_date}}</div>
+                    <div class="uk-card-footer">
+                        <a href="{% url 'post_detail' pk=post.pk %}" class="uk-button uk-button-primary">Detalles</a>
+                        <br>
+                        {{post.create_date}}
+                    </div>
                 </div>
             </div>
         {% endfor %}
