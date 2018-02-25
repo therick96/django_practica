@@ -17,3 +17,17 @@ body{
 .text_white{
     color: white;
 }
+
+.uk-navbar-container{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.footer{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.uk-card{
+    border-radius: 10%;
+}

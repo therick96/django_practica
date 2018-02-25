@@ -10,26 +10,66 @@
     <script src="/static/js/uikit-icons.min.js"></script>
 </head>
 <body>
-    <div class="uk-section">
-        <div class="uk-container uk-margin-remove-bottom">
+        <div class="uk-container">
             <h1 class=""><a href="/">PBlog</a></h1>
-            </div>
-        <div class="uk-container-large uk-margin-remove-top">
-            <nav class="uk-navbar-container bg_IndianRed uk-navbar-transparent" uk-navbar>
+        </div>
+        <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent bg_IndianRed" uk-navbar> 
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="">Hola</a></li>
-                        <li><a href="">Hola</a></li>
-                        <li><a href="">Hola</a></li>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Quienes Somos</a></li>
+                        <li><a href="">Entradas</a></li>
+                        <li><a href="">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="uk-container uk-background-default">
-            {% block content %}
-            {% endblock %}
+        <div class="uk-container">
+            <div class="uk-background-muted uk-padding">
+                {% block content %}
+                {% endblock %}
+                
+            </div>
         </div>
-        
-    </div>
+
+        <div class="uk-container">
+            <!--Grid-->
+            <div class="bg_silver uk-padding-small footer" style="border-top: 5px solid gray;">
+                <div class="uk-grid uk-child-width-1-2@m uk-child-width-expand@s" uk-grid>
+                    <div>
+                        <div>Hola</div>
+                    </div>
+                    <div class="uk-grid uk-child-width-1-2@m uk-child-width-expand@s" uk-grid>
+                        <div>
+                            <div>Adios</div>
+                        </div>
+                        <div>
+                            <div>
+                                <!-- FOrmulario -->
+                                <form action="">
+                                    <div class="uk-margin">
+                                        <h3>Contac Us</h3>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <input type="text" class="uk-input">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <input type="text" class="uk-input">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <textarea name="" id="" cols="30" rows="3" class="uk-textarea"></textarea>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <button class="uk-button uk-button-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
 </body>
 </html>
