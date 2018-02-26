@@ -5,6 +5,7 @@
         <h1 class="uk-article-title uk-text-center">{{post.title}}</h1>
         <p class="uk-article-meta">
             Write by: {{post.author}} - {{post.create_date}}
+            <a href="{% url 'post_edit' pk=post.pk %}" class="uk-button uk-button-primary">Edit</a>
         </p>
         <p>{{post.text}}</p>
     </article>
