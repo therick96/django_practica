@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    <form action="" method="POST" class="uk-form-vertical">
+        <div class="uk-margin uk-grid-large">
+            {% csrf_token %}
+            {{form.as_p}}
+        </div>
+        <button class="uk-button uk-button-primary">
+            Guardar
+        </button>
+    </form>
+
+{% endblock %}

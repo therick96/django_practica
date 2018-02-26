@@ -6,7 +6,7 @@
         {% for post in posts %}
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-margin-bottom">
-                    <div class="uk.uk-card-header" align="center">
+                    <div class="uk.uk-card-header uk-padding-small" align="center">
                         <h2 class="uk-card-title uk-margin-remove-bottom" align="center">
                             <a href="{% url 'post_detail' pk=post.pk %}">
                                 {{post.title}}
@@ -18,7 +18,7 @@
                         
                     </div>
                     <div class="uk-card-footer">
-                        <a href="{% url 'post_detail' pk=post.pk %}" class="uk-button uk-button-primary">Detalles</a>
+                        <a href="{% url 'post_edit' pk=post.pk %}" class="uk-button uk-button-secondary"><span uk-icon="pencil"></span></a>
                         <br>
                         {{post.create_date}}
                     </div>
