@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <form action="" class="uk-form-vertical">
+    <form action="" method="POST" class="uk-form-vertical">
         <div class="uk-margin uk-grid-large">
             {% csrf_token %}
             {{form.as_p}}
